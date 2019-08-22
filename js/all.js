@@ -21,7 +21,7 @@ index_xhr.onload = function () {
                 + allRoomData[i].imageUrl +
                 '"><p class="roomTitle">'
                 + allRoomData[i].name +
-                '</p><div class="hideInfo"><a href="../'
+                '</p><div class="hideInfo"><a href="./'
                 + allRoomData[i].id + '.html" class="hideTitle">'
                 + allRoomData[i].name +
                 '</a><div class="pricebox"><p class="day">平日（一～四）</p><p class="price">$NT '
