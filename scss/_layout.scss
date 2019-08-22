@@ -1,0 +1,28 @@
+/*header*/
+*,
+body {
+  font-family: $fontfamily;
+  box-sizing: border-box;
+}
+
+.wrap {
+  width: 1440px;
+  margin: 0 auto;
+  background: $body_bg;
+}
+.header {
+  background: #ffffff;
+}
+.logo {
+  width: 160px;
+  background: $logo_color;
+  a {
+    display: block;
+    text-decoration: none;
+    color: $logo_fontcolor;
+    letter-spacing: $logo_fontspace;
+    text-align: center;
+    padding: 20px 5px;
+    cursor: pointer;
+  }
+}

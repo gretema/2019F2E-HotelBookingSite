@@ -1,0 +1,139 @@
+.content {
+  hr {
+    border: 1px solid #e0e0e0;
+  }
+}
+
+.menu {
+  display: flex;
+  margin-left: 120px;
+  li {
+    a {
+      text-decoration: none;
+      display: block;
+      padding: 15px 30px;
+      border: 1px solid #e0e0e0;
+      border-radius: 5px;
+      margin: 20px;
+      font: Bold 16px/23px Noto Serif TC;
+      letter-spacing: 1.6px;
+      color: #333333;
+      cursor: pointer;
+      &:hover {
+        background: #ffffff;
+        border: 1px solid #e0e0e0;
+        border-radius: 5px;
+        color: #2a58a8;
+      }
+    }
+  }
+}
+.roomList {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 50px;
+}
+.room {
+  padding: 15px;
+  .roomTitle {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    background: rgba(42, 88, 167, 0.6);
+    padding: 5px;
+    transform: translate(20px, -40px);
+  }
+  .picbox {
+    width: 350px;
+    height: 380px;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    .hideInfo {
+      width: 100%;
+      position: absolute;
+      bottom: -130px;
+      transition: all 1s;
+      background: #ffffff;
+      .hideTitle {
+        font-family: $fontfamily;
+        text-decoration: none;
+        display: block;
+        font-size: 20px;
+        font-weight: bold;
+        color: $logo_color;
+        text-align: center;
+        padding: 10px;
+      }
+      .pricebox {
+        width: 160px;
+        float: left;
+        text-align: center;
+        padding: 10px;
+        margin-left: 10px;
+        line-height: 1.5;
+        .day {
+          font-size: 14px;
+          color: #b4afaa;
+        }
+        .price {
+          font-weight: bold;
+          color: #333333;
+        }
+      }
+    }
+    &:hover .hideInfo {
+      bottom: 0;
+    }
+  }
+}
+
+/*footer*/
+
+.footer {
+  line-height: 1.5;
+  background: $logo_color;
+  color: $logo_fontcolor;
+  padding: 20px;
+  margin-top: 50px;
+  @include clearfix;
+}
+.contactInfo {
+  float: left;
+  margin-left: 100px;
+  h2 {
+    padding-left: 10px;
+    font-size: 36px;
+  }
+  li {
+    display: inline;
+    padding: 0 12px;
+    a {
+      text-decoration: none;
+      font-size: 30px;
+      color: $logo_fontcolor;
+      &:hover {
+        color: #b4afaa;
+      }
+    }
+  }
+}
+.hotelInfo {
+  float: right;
+  margin-right: 160px;
+  text-align: right;
+}
+.copyright {
+  background: #1e407b;
+  color: $logo_fontcolor;
+  padding: 20px;
+  text-align: center;
+  font-size: 12px;
+}

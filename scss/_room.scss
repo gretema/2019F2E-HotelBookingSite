@@ -1,0 +1,127 @@
+/*單一房間 header*/
+.picbox {
+  width: 1440px;
+  height: 640px;
+  overflow: hidden;
+  @include clearfix;
+  a {
+    display: block;
+  }
+  .image1 {
+    width: 1120px;
+    float: left;
+    transform: translateY(0);
+  }
+  .image2,
+  .image3 {
+    width: 320px;
+    float: left;
+  }
+  img {
+    width: 100%;
+  }
+}
+
+/*單一房間 content*/
+
+/*infobar*/
+.info_bar {
+  width: 1200px;
+  margin: 30px auto;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  div {
+    padding: 10px;
+  }
+  p {
+    line-height: 1.5;
+  }
+}
+.basicInfo,
+.check {
+  color: #b4afaa;
+}
+.info_text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333333;
+}
+
+.content {
+  @include clearfix;
+}
+.main_info {
+  width: 660px;
+  float: left;
+  margin-left: 80px;
+  h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+    margin: 30px;
+  }
+}
+.desc {
+  padding-left: 30px;
+  border-left: solid 4px #508df6;
+  h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #508df6;
+    padding-bottom: 20px;
+  }
+  p {
+    line-height: 32px;
+    color: #333333;
+  }
+}
+.facility {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+.fac_items {
+  width: 250px;
+  color: #b4afaa;
+  padding: 15px 0;
+  i {
+    padding-right: 10px;
+  }
+}
+.active {
+  color: #333333;
+}
+/*訂房表頭(價格)*/
+.booking {
+  .pricebar {
+    background: $price_bg_color;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    .split_line {
+      width: 0;
+      height: 50px;
+      border: solid 0.5px #b4afaa;
+    }
+  }
+  .pricebox {
+    width: 160px;
+    text-align: center;
+    line-height: 1.5;
+    .day {
+      font-size: 14px;
+      color: #b4afaa;
+    }
+    .price {
+      font-size: 24px;
+      color: #ffffff;
+    }
+  }
+}

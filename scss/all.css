@@ -1,0 +1,469 @@
+@charset "UTF-8";
+/*變數*/
+/*mix-in*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.content hr {
+  border: 1px solid #e0e0e0;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 120px;
+}
+
+.menu li a {
+  text-decoration: none;
+  display: block;
+  padding: 15px 30px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  margin: 20px;
+  font: Bold 16px/23px Noto Serif TC;
+  letter-spacing: 1.6px;
+  color: #333333;
+  cursor: pointer;
+}
+
+.menu li a:hover {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  color: #2a58a8;
+}
+
+.roomList {
+  width: 1200px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-bottom: 50px;
+}
+
+.room {
+  padding: 15px;
+}
+
+.room .roomTitle {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  background: rgba(42, 88, 167, 0.6);
+  padding: 5px;
+  -webkit-transform: translate(20px, -40px);
+          transform: translate(20px, -40px);
+}
+
+.room .picbox {
+  width: 350px;
+  height: 380px;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+.room .picbox img {
+  width: 100%;
+  height: 100%;
+}
+
+.room .picbox .hideInfo {
+  width: 100%;
+  position: absolute;
+  bottom: -130px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  background: #ffffff;
+}
+
+.room .picbox .hideInfo .hideTitle {
+  font-family: Microsoft Jhenghei;
+  text-decoration: none;
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  color: #2a58a8;
+  text-align: center;
+  padding: 10px;
+}
+
+.room .picbox .hideInfo .pricebox {
+  width: 160px;
+  float: left;
+  text-align: center;
+  padding: 10px;
+  margin-left: 10px;
+  line-height: 1.5;
+}
+
+.room .picbox .hideInfo .pricebox .day {
+  font-size: 14px;
+  color: #b4afaa;
+}
+
+.room .picbox .hideInfo .pricebox .price {
+  font-weight: bold;
+  color: #333333;
+}
+
+.room .picbox:hover .hideInfo {
+  bottom: 0;
+}
+
+/*footer*/
+.footer {
+  line-height: 1.5;
+  background: #2a58a8;
+  color: #ffffff;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.footer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.contactInfo {
+  float: left;
+  margin-left: 100px;
+}
+
+.contactInfo h2 {
+  padding-left: 10px;
+  font-size: 36px;
+}
+
+.contactInfo li {
+  display: inline;
+  padding: 0 12px;
+}
+
+.contactInfo li a {
+  text-decoration: none;
+  font-size: 30px;
+  color: #ffffff;
+}
+
+.contactInfo li a:hover {
+  color: #b4afaa;
+}
+
+.hotelInfo {
+  float: right;
+  margin-right: 160px;
+  text-align: right;
+}
+
+.copyright {
+  background: #1e407b;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  font-size: 12px;
+}
+
+/*header*/
+*,
+body {
+  font-family: Microsoft Jhenghei;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrap {
+  width: 1440px;
+  margin: 0 auto;
+  background: #f2f2f2;
+}
+
+.header {
+  background: #ffffff;
+}
+
+.logo {
+  width: 160px;
+  background: #2a58a8;
+}
+
+.logo a {
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+  letter-spacing: 6.4px;
+  text-align: center;
+  padding: 20px 5px;
+  cursor: pointer;
+}
+
+.booking {
+  margin-left: 100px;
+  width: 480px;
+  float: left;
+}
+
+.booking form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 100%;
+  line-height: 2;
+  letter-spacing: 3px;
+  padding: 30px;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+}
+
+.booking form #name,
+.booking form #tel,
+.booking form .datepicker,
+.booking form #people {
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.booking form .bookingBtn {
+  margin: 40px 0;
+  padding: 15px;
+  color: #ffffff;
+  background: #508df6;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.booking form .bookingBtn:hover {
+  background: #2a58a8;
+}
+
+/*單一房間 header*/
+.picbox {
+  width: 1440px;
+  height: 640px;
+  overflow: hidden;
+}
+
+.picbox:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.picbox a {
+  display: block;
+}
+
+.picbox .image1 {
+  width: 1120px;
+  float: left;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.picbox .image2,
+.picbox .image3 {
+  width: 320px;
+  float: left;
+}
+
+.picbox img {
+  width: 100%;
+}
+
+/*單一房間 content*/
+/*infobar*/
+.info_bar {
+  width: 1200px;
+  margin: 30px auto;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.info_bar div {
+  padding: 10px;
+}
+
+.info_bar p {
+  line-height: 1.5;
+}
+
+.basicInfo,
+.check {
+  color: #b4afaa;
+}
+
+.info_text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333333;
+}
+
+.content:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.main_info {
+  width: 660px;
+  float: left;
+  margin-left: 80px;
+}
+
+.main_info h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333333;
+  margin: 30px;
+}
+
+.desc {
+  padding-left: 30px;
+  border-left: solid 4px #508df6;
+}
+
+.desc h2 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #508df6;
+  padding-bottom: 20px;
+}
+
+.desc p {
+  line-height: 32px;
+  color: #333333;
+}
+
+.facility {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+
+.fac_items {
+  width: 250px;
+  color: #b4afaa;
+  padding: 15px 0;
+}
+
+.fac_items i {
+  padding-right: 10px;
+}
+
+.active {
+  color: #333333;
+}
+
+/*訂房表頭(價格)*/
+.booking .pricebar {
+  background: #2a58a8;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.booking .pricebar .split_line {
+  width: 0;
+  height: 50px;
+  border: solid 0.5px #b4afaa;
+}
+
+.booking .pricebox {
+  width: 160px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.booking .pricebox .day {
+  font-size: 14px;
+  color: #b4afaa;
+}
+
+.booking .pricebox .price {
+  font-size: 24px;
+  color: #ffffff;
+}
+/*# sourceMappingURL=all.css.map */

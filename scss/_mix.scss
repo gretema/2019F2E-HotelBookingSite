@@ -1,0 +1,29 @@
+/*變數*/
+$fontfamily: Microsoft Jhenghei;
+$logo_fontcolor: #ffffff;
+$logo_color: #2a58a8;
+$logo_fontspace: 6.4px;
+
+$body_bg: #f2f2f2;
+
+$info_bar_wt: 1200px;
+$info_bar_ht: 130px;
+$info_bar_font_size: 24px;
+
+$desc_title_size: 40px;
+$desc_font_size: 16px;
+
+$booking_wt: 480px;
+$booking_ht: 671px;
+$price_bg_color: #2a58a8;
+$price_font_size: 24px;
+$booking_btn_bg: #508df6;
+
+/*mix-in*/
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
