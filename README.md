@@ -8,5 +8,10 @@
 - [DEMO](https://gretema.github.io/2019F2E-HotelBookingSite/)
 
 ## Clone Project
-
+```
+git clone https://github.com/gretema/2019F2E-HotelBookingSite.git
+```
 ## 專案資料夾
+- css
+- js
+- scss
